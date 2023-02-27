@@ -1,8 +1,7 @@
-mod two_number_sum;
+mod sorted_squared_array;
 
 fn main() {
-    let mut array = [3, 5, -4, 8, 11, 1, -1, 6];
-    let target_sum = 10;
-    let result = two_number_sum::two_number_sum(&mut array, target_sum);
+    let mut arr = vec![-10, -5, 0, 5, 10];
+    let result = sorted_squared_array::sorted_squared_array(&mut arr);
     println!("{:?}", result);
 }
