@@ -1,3 +1,5 @@
+mod is_palindrome;
+
 fn main() {
     // // create a binary search tree
     // let mut root = BST::new(10);
@@ -11,4 +13,8 @@ fn main() {
     // let target = 12;
     // let closest_value = find_closest_value_in_bst(&root, target);
     // println!("The closest value to {} is {}", target, closest_value);
+
+    let string = "Deleveled";
+    let result = is_palindrome::is_palindrome(string);
+    println!("{} is palindrome: {}", string, result);
 }
