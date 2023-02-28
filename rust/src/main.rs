@@ -1,4 +1,4 @@
-mod first_duplicate_value;
+mod reversed_words_in_string;
 
 fn main() {
     // // create a binary search tree
@@ -13,7 +13,4 @@ fn main() {
     // let target = 12;
     // let closest_value = find_closest_value_in_bst(&root, target);
     // println!("The closest value to {} is {}", target, closest_value);
-
-    let mut arr = [2, 1, 5, 2, 3, 3, 4];
-    println!("{:?}", first_duplicate_value::first_duplicate_value(&mut arr));
 }
