@@ -1,4 +1,4 @@
-mod is_palindrome;
+mod smallest_difference;
 
 fn main() {
     // // create a binary search tree
@@ -14,7 +14,10 @@ fn main() {
     // let closest_value = find_closest_value_in_bst(&root, target);
     // println!("The closest value to {} is {}", target, closest_value);
 
-    let string = "Deleveled";
-    let result = is_palindrome::is_palindrome(string);
-    println!("{} is palindrome: {}", string, result);
+    let mut arr1 = [1, 3, 15, 11, 2];
+    let mut arr2 = [23, 127, 235, 19, 8];
+
+    let result = smallest_difference::smallest_difference(&mut arr1, &mut arr2);
+
+    println!("Smallest difference is: {:?}", result);
 }
