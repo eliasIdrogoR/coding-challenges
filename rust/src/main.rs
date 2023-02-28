@@ -1,4 +1,4 @@
-mod move_element_to_end;
+mod is_monotonic;
 
 fn main() {
     // // create a binary search tree
@@ -14,8 +14,7 @@ fn main() {
     // let closest_value = find_closest_value_in_bst(&root, target);
     // println!("The closest value to {} is {}", target, closest_value);
 
-    let mut arr = [2, 1, 2, 2, 2, 3, 4, 2];
-    let to_move = 2;
-    let result = move_element_to_end::move_element_to_end(&mut arr, to_move);
+    let mut arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let result = is_monotonic::is_monotonic(&mut arr);
     println!("Result: {:?}", result);
 }
