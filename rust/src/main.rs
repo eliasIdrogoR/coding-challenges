@@ -1,4 +1,4 @@
-mod is_monotonic;
+mod first_duplicate_value;
 
 fn main() {
     // // create a binary search tree
@@ -14,7 +14,6 @@ fn main() {
     // let closest_value = find_closest_value_in_bst(&root, target);
     // println!("The closest value to {} is {}", target, closest_value);
 
-    let mut arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let result = is_monotonic::is_monotonic(&mut arr);
-    println!("Result: {:?}", result);
+    let mut arr = [2, 1, 5, 2, 3, 3, 4];
+    println!("{:?}", first_duplicate_value::first_duplicate_value(&mut arr));
 }
