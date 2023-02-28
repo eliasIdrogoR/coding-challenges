@@ -1,4 +1,4 @@
-mod smallest_difference;
+mod move_element_to_end;
 
 fn main() {
     // // create a binary search tree
@@ -14,10 +14,8 @@ fn main() {
     // let closest_value = find_closest_value_in_bst(&root, target);
     // println!("The closest value to {} is {}", target, closest_value);
 
-    let mut arr1 = [1, 3, 15, 11, 2];
-    let mut arr2 = [23, 127, 235, 19, 8];
-
-    let result = smallest_difference::smallest_difference(&mut arr1, &mut arr2);
-
-    println!("Smallest difference is: {:?}", result);
+    let mut arr = [2, 1, 2, 2, 2, 3, 4, 2];
+    let to_move = 2;
+    let result = move_element_to_end::move_element_to_end(&mut arr, to_move);
+    println!("Result: {:?}", result);
 }
